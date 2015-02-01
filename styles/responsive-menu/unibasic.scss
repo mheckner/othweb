@@ -41,11 +41,12 @@ nav {
     ul {
         width: 60%;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         height: 1.125em;
     }
     a {
         color: #fff;
+        display: inline-block;
         width: 100%;
         text-align: center;
         text-decoration: none;
