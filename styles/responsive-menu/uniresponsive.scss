@@ -1,0 +1,85 @@
+/* Device break point widths */
+
+$medium-screen-width: 768px;
+$small-screen-width: 600px;
+/* Colors */
+
+$navigation-bg-color: #3367D6;
+$header-bg-color: #4285f4;
+/* Style for medium sized screens - Display navigation items in rows and spread to whole page width */
+
+@media screen and (max-width: $medium-screen-width) {
+    /* Required, so that navigation can "grow" in height */
+    
+    nav {
+        height: auto;
+        /* Nav takes full screen width */
+        
+        ul {
+            width: 100%;
+        }
+        /* Each list item takes half of the screen width */
+        
+        li {
+            width: 50%;
+        }
+        a {
+            text-align: left;
+            width: 100%;
+            text-indent: 1em;
+        }
+    }
+}
+/* Style for small screens - Display navigation items in one column and add navigation drawer */
+
+@media only screen and (max-width: $small-screen-width) {
+    #header {
+        display: none;
+    }
+    nav {
+        ul {
+            display: none;
+            height: auto;
+            width: 100%;
+        }
+        /* Show pulldown menu trigger */
+        
+        a#pullDownMenu {
+            display: block;
+            background-color: $header-bg-color;
+            position: relative;
+        }
+        /* Insert menu icon */
+        
+        a#pullDownMenu:after {
+            content: "";
+            background: url('../images/nav-icon.png') no-repeat;
+            width: 1.875em;
+            height: 1.875em;
+            position: absolute;
+            right: 0.938em;
+            top: 0.625em;
+        }
+        li {
+            width: 100%;
+        }
+    }
+
+     #headline #intro {
+        float: none;
+        width: 100%;
+    }
+
+    #headline #register {
+        float: none;
+        width: 100%;
+    }
+
+    #section1 div img {
+        width: 70%;
+        margin: 1%;
+        box-sizing: border-box;
+        border-radius: 0%;
+        box-shadow: black 0px 0px 5px;
+    }
+}

@@ -1,0 +1,42 @@
+/* Colors */
+$navigation-bg-color: #3367D6;
+$header-bg-color: #4285f4;
+
+/* Basic Styles */
+body {
+    font-family: 'Roboto Condensed Light', Helvetica, Arial, sans-serif;
+    width: 800px;
+}
+header {
+    background: $header-bg-color;
+    h1 {
+        margin: 0 0 0 0;
+        color: #ffffff;
+    }
+}
+nav {
+    height: 40px;
+    background: $navigation-bg-color;
+    font-size: 18px;
+    position: relative;
+    li {
+        display: inline;
+        float: left;
+    }
+    ul {
+        padding: 0;
+        margin: 0 auto;
+        height: 40px;
+    }
+    a {
+        color: #fff;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 40px;
+    }
+    a:hover, a:active {
+        background-color: #8c99a4;
+    }
+}
