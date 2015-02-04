@@ -12,6 +12,7 @@ $header-bg-color: #4285f4;
     /* Required, so that navigation can "grow" in height */
     
     nav {
+
         height: auto;
         /* Nav takes full screen width */
         
@@ -30,6 +31,7 @@ $header-bg-color: #4285f4;
         }
     }
 }
+
 /* Style for small screens - Display navigation items in one column and add navigation drawer */
 
 @media only screen and (max-width: $small-screen-width) {
